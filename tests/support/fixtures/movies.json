@@ -1,0 +1,83 @@
+{
+    "a_noite_dos_mortos_vivos": {
+      "title": "A Noite dos Mortos-Vivos",
+      "overview": "Um grupo de pessoas fica preso em uma casa de fazenda enquanto zumbis canibais rondam do lado de fora.",
+      "company": "The Walter Reade Organization",
+      "release_year": 1968,
+      "featured": false,
+      "cover": "imagens/a_noite_dos_mortos_vivos.png"
+    },
+    "o_despertar_dos_mortos": {
+      "title": "O Despertar dos Mortos",
+      "overview": "Sobreviventes se refugiam em um shopping center enquanto hordas de zumbis tentam invadi-lo.",
+      "company": "United Film Distribution Company",
+      "release_year": 1978,
+      "featured": false,
+      "cover": "imagens/o_despertar_dos_mortos.png"
+    },
+    "dia_dos_mortos": {
+      "title": "Dia dos Mortos",
+      "overview": "Em um mundo dominado por zumbis, um grupo de cientistas e militares tenta sobreviver em um bunker subterrâneo.",
+      "company": "United Film Distribution Company",
+      "release_year": 1985,
+      "featured": false,
+      "cover": "imagens/dia_dos_mortos.png"
+    },
+    "exterminio": {
+      "title": "Extermínio",
+      "overview": "Após um vírus devastador transformar a população em criaturas violentas, um pequeno grupo tenta sobreviver em Londres.",
+      "company": "Fox Searchlight Pictures",
+      "release_year": 2002,
+      "featured": false,
+      "cover": "imagens/exterminio.png"
+    },
+    "madrugada_dos_mortos": {
+      "title": "Madrugada dos Mortos",
+      "overview": "Um grupo de sobreviventes se refugia em um shopping center enquanto um apocalipse zumbi toma conta do mundo.",
+      "company": "Universal Pictures",
+      "release_year": 2004,
+      "featured": false,
+      "cover": "imagens/madrugada_dos_mortos.png"
+    },
+    "resident_evil_o_hospede_maldito": {
+      "title": "Resident Evil: O Hóspede Maldito",
+      "overview": "Uma equipe de elite entra em um laboratório subterrâneo para conter um vírus que transforma pessoas em mortos-vivos.",
+      "company": "Screen Gems",
+      "release_year": 2002,
+      "featured": false,
+      "cover": "imagens/resident_evil.png"
+    },
+    "zumbilandia": {
+      "title": "Zumbilândia",
+      "overview": "Em um mundo dominado por zumbis, quatro sobreviventes atravessam os Estados Unidos seguindo regras para se manterem vivos.",
+      "company": "Columbia Pictures",
+      "release_year": 2009,
+      "featured": false,
+      "cover": "imagens/zumbilandia.png"
+    },
+    "guerra_mundial_z": {
+      "title": "Guerra Mundial Z",
+      "overview": "Um ex-investigador da ONU viaja pelo mundo tentando conter uma pandemia zumbi global.",
+      "company": "Paramount Pictures",
+      "release_year": 2013,
+      "featured": false,
+      "cover": "imagens/guerra_mundial_z.png"
+    },
+    "invasao_zumbi": {
+      "title": "Invasão Zumbi",
+      "overview": "Passageiros de um trem precisam lutar para sobreviver quando um surto zumbi se espalha pela Coreia do Sul.",
+      "company": "Next Entertainment World",
+      "release_year": 2016,
+      "featured": false,
+      "cover": "imagens/invasao_zumbi.png"
+    },
+    "rec": {
+      "title": "REC",
+      "overview": "Uma jornalista e um cinegrafista ficam presos em um prédio em quarentena enquanto um vírus transforma os moradores em criaturas violentas.",
+      "company": "Filmax",
+      "release_year": 2007,
+      "featured": false,
+      "cover": "imagens/rec.png"
+    }
+  }
+  
