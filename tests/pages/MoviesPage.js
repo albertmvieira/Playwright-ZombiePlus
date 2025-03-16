@@ -1,4 +1,4 @@
-const { expect } = require('@playwright/test');
+const { test, expect } = require('@playwright/test');
 
 export class MoviesPage {
 
@@ -26,6 +26,7 @@ export class MoviesPage {
 
         await this.page.locator('#select_year .react-select__indicator').click();
         await this.page.locator('.react-select__option').filter({ hasText: release_year }).click();
-
+        await this.page.getByRole('button', { name: 'Cadastrar' }).click();
+    
     }
 }

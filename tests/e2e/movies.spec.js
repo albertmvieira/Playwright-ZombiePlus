@@ -1,22 +1,19 @@
-const { test, expect } = require('@playwright/test'); //importa a função test do Playwright
-const { LoginPage } = require('../pages/LoginPage'); //importa a classe LoginPage do arquivo LoginPage.js
-const { Components } = require('../pages/Components'); //importa a classe Components do arquivo Components.js
-const { MoviesPage } = require('../pages/MoviesPage'); //importa a classe MoviesPage do arquivo MoviesPage.js
+const { test } = require('../support'); //importa a função test do arquivo support/index.js
 
-let loginPage;
-let components;
-let moviesPage;
+const data = require('../support/fixtures/movies.json'); //importa o arquivo movies.json
+const { executeSql } = require('../support/database'); //importa a função executeSql do arquivo database.js
 
-test.beforeEach(({ page }) => {
-    loginPage = new LoginPage(page); //instancia a classe LoginPage
-    components = new Components(page); //instancia a classe Components
-    moviesPage = new MoviesPage(page); //instancia a classe MoviesPage
-});
 
-test('deve poder cadastrar um novo filme', async ({page}) => {
-    await loginPage.visit(); //chama o método visit da classe LoginPage
-    await loginPage.submitLoginForm('admin@zombieplus.com', 'pwd123'); //chama o método submitLoginForm da classe LoginPage
-    await moviesPage.isLoggedIn(); //chama o método isLoggedIn da classe LoginPage
+test('deve poder cadastrar um novo filme', async ({ page }) => {
 
-    await moviesPage.createMovie('Filme 1', 'Sinopse do filme 1', 'Sony Pictures', '2021');
+    const movie = data.create; //cria uma constante movie que recebe o objeto create do arquivo movies.json
+
+    await executeSql(`delete from movies where title = '${movie.title}';`); //chama a função executeSql passando o script SQL para deletar o filme com o título do objeto movie
+
+    await page.loginPage.visit(); //chama o método visit da classe LoginPage
+    await page.loginPage.submitLoginForm('admin@zombieplus.com', 'pwd123'); //chama o método submitLoginForm da classe LoginPage
+    await page.moviesPage.isLoggedIn(); //chama o método isLoggedIn da classe LoginPage
+
+    await page.moviesPage.createMovie(movie.title, movie.overview, movie.company, movie.release_year); //chama o método createMovie da classe MoviesPage
+    await page.components.toastContainText('Cadastro realizado com sucesso!'); //chama o método haveText da classe Components
 })

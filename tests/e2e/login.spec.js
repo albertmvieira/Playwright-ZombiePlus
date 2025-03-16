@@ -1,4 +1,8 @@
+// Login não0 foi alterado para usar o novo contexto test customizado para mostrar o uso tanto com o contexto padrão do Playwright quanto com o contexto customizado:
+
 const { test, expect } = require('@playwright/test'); //importa a função test do Playwright
+
+
 const { LoginPage } = require('../pages/LoginPage'); //importa a classe LoginPage do arquivo LoginPage.js
 const { Components } = require('../pages/Components'); //importa a classe Components do arquivo Components.js
 const { MoviesPage } = require('../pages/MoviesPage'); //importa a classe MoviesPage do arquivo MoviesPage.js
@@ -23,7 +27,7 @@ test('não deve logar com senha incorreta', async ({ page }) => {
     await loginPage.visit(); //chama o método visit da classe LoginPage
     await loginPage.submitLoginForm('admin@zombieplus.com', 'abc123'); //chama o método submitLoginForm da classe LoginPage
     const message = 'Oops!Ocorreu um erro ao tentar efetuar o login. Por favor, verifique suas credenciais e tente novamente.'
-    await components.toastHaveText(message); //chama o método toastHaveText da classe LoginPage
+    await components.toastContainText(message); //chama o método toastContainText da classe LoginPage
 });
 
 test('não deve logar quando o email é inválido ', async ({ page }) => {
