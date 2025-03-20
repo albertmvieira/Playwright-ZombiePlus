@@ -1,4 +1,4 @@
-// Login não0 foi alterado para usar o novo contexto test customizado para mostrar o uso tanto com o contexto padrão do Playwright quanto com o contexto customizado:
+// Login não foi alterado para usar o novo contexto test customizado para mostrar o uso tanto com o contexto padrão do Playwright quanto com o contexto customizado:
 
 const { test, expect } = require('@playwright/test'); //importa a função test do Playwright
 
