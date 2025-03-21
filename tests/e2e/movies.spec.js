@@ -16,4 +16,21 @@ test('deve poder cadastrar um novo filme', async ({ page }) => {
 
     await page.moviesPage.createMovie(movie.title, movie.overview, movie.company, movie.release_year); //chama o método createMovie da classe MoviesPage
     await page.components.toastContainText('Cadastro realizado com sucesso!'); //chama o método haveText da classe Components
+
+})
+
+test('não deve cadastrar um filme quando os campos obrigatórios não são preenchidos', async ({ page }) => {
+    await page.loginPage.visit(); //chama o método visit da classe LoginPage
+    await page.loginPage.submitLoginForm('admin@zombieplus.com', 'pwd123'); //chama o método submitLoginForm da classe LoginPage
+    await page.moviesPage.isLoggedIn(); //chama o método isLoggedIn da classe LoginPage
+
+    await page.moviesPage.goForm(); //chama o método goForm da classe MoviesPage
+    await page.moviesPage.submit(); //chama o método submit da classe MoviesPage
+
+    await page.moviesPage.alertHaveText([
+        'Por favor, informe o título.',
+        'Por favor, informe a sinopse.',
+        'Por favor, informe a empresa distribuidora.',
+        'Por favor, informe o ano de lançamento.'
+    ]);
 })

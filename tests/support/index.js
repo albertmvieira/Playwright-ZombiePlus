@@ -9,13 +9,15 @@ const { MoviesPage } = require('../pages/MoviesPage'); //importa a classe Movies
 // Este novo contexto test será utilizado para instanciar as classes de Page Objects e disponibilizar para os testes
 const test = base.extend({
     page: async ({page}, use) => {
-        await use({
-            ...page,
-            landingPage: new LandingPage(page), //instancia a classe LandingPage
-            loginPage: new LoginPage(page), //instancia a classe LoginPage
-            components: new Components(page), //instancia a classe Components
-            moviesPage: new MoviesPage(page) //instancia a classe MoviesPage
-        });
+        
+        const context = page 
+          
+        context['landingPage'] = new LandingPage(page), //instancia a classe LandingPage
+        context['loginPage'] = new LoginPage(page), //instancia a classe LoginPage
+        context['components'] = new Components(page), //instancia a classe Components
+        context['moviesPage'] = new MoviesPage(page) //instancia a classe MoviesPage
+        
+        await use(context) //disponibiliza o contexto para os testes
     }
 })
 
