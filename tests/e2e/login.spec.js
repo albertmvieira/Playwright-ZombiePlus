@@ -3,53 +3,50 @@
 const { test, expect } = require('@playwright/test'); //importa a função test do Playwright
 
 
-const { LoginPage } = require('../pages/LoginPage'); //importa a classe LoginPage do arquivo LoginPage.js
-const { Components } = require('../pages/Components'); //importa a classe Components do arquivo Components.js
-const { MoviesPage } = require('../pages/MoviesPage'); //importa a classe MoviesPage do arquivo MoviesPage.js
+const { Login } = require('../support/actions/Login'); //importa a classe login do arquivo login.js
+const { Components } = require('../support/actions/Components'); //importa a classe Components do arquivo Components.js
 
-let loginPage;
+let login;
 let components;
-let moviesPage;
 
 test.beforeEach(({ page }) => {
-    loginPage = new LoginPage(page); //instancia a classe LoginPage
+    login = new Login(page); //instancia a classe login
     components = new Components(page); //instancia a classe Components
-    moviesPage = new MoviesPage(page); //instancia a classe MoviesPage
 });
 
 test('deve logar como administrador', async ({ page }) => {
-    await loginPage.visit(); //chama o método visit da classe LoginPage
-    await loginPage.submitLoginForm('admin@zombieplus.com', 'pwd123'); //chama o método submitLoginForm da classe LoginPage
-    await moviesPage.isLoggedIn(); //chama o método isLoggedIn da classe LoginPage
+    await login.visit(); //chama o método visit da classe login
+    await login.submitLoginForm('admin@zombieplus.com', 'pwd123');
+    await login.isLoggedIn('Admin');
 });
 
 test('não deve logar com senha incorreta', async ({ page }) => {
-    await loginPage.visit(); //chama o método visit da classe LoginPage
-    await loginPage.submitLoginForm('admin@zombieplus.com', 'abc123'); //chama o método submitLoginForm da classe LoginPage
+    await login.visit(); //chama o método visit da classe login
+    await login.submitLoginForm('admin@zombieplus.com', 'abc123'); //chama o método submitLoginForm da classe login
     const message = 'Oops!Ocorreu um erro ao tentar efetuar o login. Por favor, verifique suas credenciais e tente novamente.'
-    await components.toastContainText(message); //chama o método toastContainText da classe LoginPage
+    await components.toastContainText(message); //chama o método toastContainText da classe login
 });
 
 test('não deve logar quando o email é inválido ', async ({ page }) => {
-    await loginPage.visit(); //chama o método visit da classe LoginPage
-    await loginPage.submitLoginForm('www.albert.com.br', 'abc123'); //chama o método submitLoginForm da classe LoginPage
+    await login.visit(); //chama o método visit da classe login
+    await login.submitLoginForm('www.albert.com.br', 'abc123'); //chama o método submitLoginForm da classe login
     await components.alertHaveText('Email incorreto'); //chama o método alertHaveText da classe Components
 });
 
 test('não deve logar quando o email não é preenchido', async ({ page }) => {
-    await loginPage.visit(); //chama o método visit da classe LoginPage
-    await loginPage.submitLoginForm('', 'abc123'); //chama o método submitLoginForm da classe LoginPage
+    await login.visit(); //chama o método visit da classe login
+    await login.submitLoginForm('', 'abc123'); //chama o método submitLoginForm da classe login
     await components.alertHaveText('Campo obrigatório'); //chama o método alertHaveText da classe Components
 });
 
 test('não deve logar quando a senha não é preenchida', async ({ page }) => {
-    await loginPage.visit(); //chama o método visit da classe LoginPage
-    await loginPage.submitLoginForm('', 'abc123'); //chama o método submitLoginForm da classe LoginPage
+    await login.visit(); //chama o método visit da classe login
+    await login.submitLoginForm('', 'abc123'); //chama o método submitLoginForm da classe login
     await components.alertHaveText('Campo obrigatório'); //chama o método alertHaveText da classe Components
 });
 
 test('não deve logar quando nenhum campo é preenchida', async ({ page }) => {
-    await loginPage.visit(); //chama o método visit da classe LoginPage
-    await loginPage.submitLoginForm('', ''); //chama o método submitLoginForm da classe LoginPage
+    await login.visit(); //chama o método visit da classe login
+    await login.submitLoginForm('', ''); //chama o método submitLoginForm da classe login
     await components.alertHaveText(['Campo obrigatório', 'Campo obrigatório']); //chama o método alertHaveText da classe Components
 });

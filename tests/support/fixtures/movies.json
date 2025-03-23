@@ -4,16 +4,16 @@
       "overview": "Um grupo de pessoas fica preso em uma casa de fazenda enquanto zumbis canibais rondam do lado de fora.",
       "company": "Universal Pictures",
       "release_year": 1971,
-      "featured": false,
-      "cover": "imagens/a_noite_dos_mortos_vivos.png"
+      "featured": true,
+      "cover": "/covers/movies/mortos-vivos.jpg"
     },
-    "o_despertar_dos_mortos": {
+    "duplicate": {
       "title": "O Despertar dos Mortos",
       "overview": "Sobreviventes se refugiam em um shopping center enquanto hordas de zumbis tentam invadi-lo.",
       "company": "Netflix",
       "release_year": 1978,
       "featured": false,
-      "cover": "imagens/o_despertar_dos_mortos.png"
+      "cover": "/covers/movies/opz.jpg"
     },
     "dia_dos_mortos": {
       "title": "Dia dos Mortos",

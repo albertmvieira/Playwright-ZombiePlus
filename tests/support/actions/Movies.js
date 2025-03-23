@@ -1,16 +1,9 @@
 const { test, expect } = require('@playwright/test');
 
-export class MoviesPage {
+export class Movies {
 
     constructor(page) {
         this.page = page;
-    }
-
-    async isLoggedIn() {
-        await this.page.waitForLoadState('networkidle');
-        await expect(this.page).toHaveURL(/.*admin.*/);
-        const logoutLink = this.page.locator('a[href="/logout"]');
-        await expect(logoutLink).toBeVisible();
     }
 
     async goForm() {
@@ -21,23 +14,33 @@ export class MoviesPage {
         await this.page.getByRole('button', { name: 'Cadastrar' }).click();
     }
 
-    async createMovie(title, overview, company, release_year) {
+    async createMovie(movie) {
         await this.goForm();
-        await this.page.locator('#title').fill(title);
-        await this.page.getByLabel('Sinopse').fill(overview);
+        await this.page.locator('#title').fill(movie.title);
+        await this.page.getByLabel('Sinopse').fill(movie.overview);
 
         await this.page.locator('#select_company_id .react-select__indicator').click();
         //pegando html da página para identificar o elemento que é montado após o click do react-select
         // const html = await this.page.content();
         // console.log(html);
-        await this.page.locator('.react-select__option').filter({ hasText: company }).click();
+        await this.page.locator('.react-select__option').filter({ hasText: movie.company }).click();
 
         await this.page.locator('#select_year .react-select__indicator').click();
-        await this.page.locator('.react-select__option').filter({ hasText: release_year }).click();
+        await this.page.locator('.react-select__option').filter({ hasText: movie.release_year }).click();
+        await this.page.locator('input[name="cover"]').setInputFiles('./tests/support/fixtures' + movie.cover);
+        
+        // se o filme em movies.json possui featured = true, clica no switch
+        if (movie.featured) {
+            await this.page.locator('.featured .react-switch').click();
+            console.log('Clicou no switch');
+        }
+        
         await this.submit();
     }
 
     async alertHaveText(target) { 
         await expect(this.page.locator('.alert')).toHaveText(target)
     }
+
+
 }
