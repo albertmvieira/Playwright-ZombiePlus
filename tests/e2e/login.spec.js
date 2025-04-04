@@ -16,7 +16,7 @@ test.beforeEach(({ page }) => {
 
 test('deve logar como administrador', async ({ page }) => {
     await login.visit(); //chama o método visit da classe login
-    await login.submitLoginForm('admin@zombieplus.com', 'pwd123');
+    await login.submitLoginForm(process.env.USER_ADMIN, process.env.USER_ADMIN_PASSWORD);
     await login.isLoggedIn('Admin');
 });
 

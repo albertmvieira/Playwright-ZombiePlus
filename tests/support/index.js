@@ -21,6 +21,7 @@ const test = base.extend({
     request: async ({request}, use) => {
         const context = request
         context['api'] = new Api(request) //instancia a classe Api passando o request como parâmetro
+        await context['api'].setToken(process.env.USER_ADMIN, process.env.USER_ADMIN_PASSWORD);
         await use(context) //disponibiliza o contexto para os testes
     }
 })

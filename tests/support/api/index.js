@@ -35,7 +35,6 @@ export class Api {
 
     async postMovie(movie) {
 
-        await this.setToken(process.env.USER_ADMIN, process.env.USER_ADMIN_PASSWORD); //chama o método setToken passando o email e a senha como parâmetros
         const companyId = await this.getCompanyIdByName(movie.company); //chama o método getCompanyIdByName passando o nome da empresa como parâmetro
         const response = await this.request.post('http://localhost:3333/movies', {
             headers: {
