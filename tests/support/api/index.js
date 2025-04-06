@@ -52,4 +52,25 @@ export class Api {
             }
         });
     }
+
+    async postSerie(serie) {
+
+        const companyId = await this.getCompanyIdByName(serie.company); //chama o método getCompanyIdByName passando o nome da empresa como parâmetro
+        const response = await this.request.post('http://localhost:3333/tvshows', {
+            headers: {
+                Authorization: `Bearer ${this.token}`, //adiciona o token no header da requisição
+                ContentType: 'multipart/form-data',
+                Accept: 'application/json, text/plain, */*'
+            },
+            multipart: {
+                title: serie.title,
+                overview: serie.overview,
+                company_id: companyId,
+                release_year: serie.release_year,
+                featured: serie.featured,
+                seasons: serie.season,
+                cover: serie.cover,
+            }
+        });
+    }
 }

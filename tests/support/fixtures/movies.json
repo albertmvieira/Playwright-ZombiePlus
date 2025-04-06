@@ -15,69 +15,48 @@
       "featured": false,
       "cover": "/covers/movies/opz.jpg"
     },
-    "dia_dos_mortos": {
-      "title": "Dia dos Mortos",
-      "overview": "Em um mundo dominado por zumbis, um grupo de cientistas e militares tenta sobreviver em um bunker subterrâneo.",
-      "company": "Universal Pictures",
-      "release_year": 1985,
-      "featured": false,
-      "cover": "imagens/dia_dos_mortos.png"
-    },
-    "exterminio": {
-      "title": "Extermínio",
-      "overview": "Após um vírus devastador transformar a população em criaturas violentas, um pequeno grupo tenta sobreviver em Londres.",
-      "company": "Fox Entertainment",
-      "release_year": 2002,
-      "featured": false,
-      "cover": "imagens/exterminio.png"
-    },
-    "madrugada_dos_mortos": {
-      "title": "Madrugada dos Mortos",
-      "overview": "Um grupo de sobreviventes se refugia em um shopping center enquanto um apocalipse zumbi toma conta do mundo.",
-      "company": "Universal Pictures",
-      "release_year": 2004,
-      "featured": false,
-      "cover": "imagens/madrugada_dos_mortos.png"
-    },
-    "resident_evil_o_hospede_maldito": {
-      "title": "Resident Evil: O Hóspede Maldito",
-      "overview": "Uma equipe de elite entra em um laboratório subterrâneo para conter um vírus que transforma pessoas em mortos-vivos.",
-      "company": "Lionsgate Films",
-      "release_year": 2002,
-      "featured": false,
-      "cover": "imagens/resident_evil.png"
-    },
-    "zumbilandia": {
+    "to_remove": {
       "title": "Zumbilândia",
       "overview": "Em um mundo dominado por zumbis, quatro sobreviventes atravessam os Estados Unidos seguindo regras para se manterem vivos.",
       "company": "Columbia Pictures",
       "release_year": 2009,
       "featured": false,
-      "cover": "imagens/zumbilandia.png"
+      "cover": "/covers/movies/zumbilandia.jpg"
     },
-    "guerra_mundial_z": {
-      "title": "Guerra Mundial Z",
-      "overview": "Um ex-investigador da ONU viaja pelo mundo tentando conter uma pandemia zumbi global.",
-      "company": "Paramount Pictures",
-      "release_year": 2013,
-      "featured": false,
-      "cover": "imagens/guerra_mundial_z.png"
-    },
-    "invasao_zumbi": {
-      "title": "Invasão Zumbi",
-      "overview": "Passageiros de um trem precisam lutar para sobreviver quando um surto zumbi se espalha pela Coreia do Sul.",
-      "company": "Fox Entertainment",
-      "release_year": 2016,
-      "featured": false,
-      "cover": "imagens/invasao_zumbi.png"
-    },
-    "rec": {
-      "title": "REC",
-      "overview": "Uma jornalista e um cinegrafista ficam presos em um prédio em quarentena enquanto um vírus transforma os moradores em criaturas violentas.",
-      "company": "Netflix",
-      "release_year": 2007,
-      "featured": false,
-      "cover": "imagens/rec.png"
+    "search":{
+      "input": "zumbi",
+      "output": [
+        "Invasão Zumbi",
+        "Dia dos Zumbis",
+        "Meu Namorado é um Zumbi"
+
+      ],
+      "data": [
+        {
+          "title": "Invasão Zumbi",
+          "overview": "Passageiros de um trem precisam lutar para sobreviver quando um surto zumbi se espalha pela Coreia do Sul.",
+          "company": "Fox Entertainment",
+          "release_year": 2016,
+          "featured": false,
+          "cover": "/covers/movies/wwz.png"
+        },
+        {
+          "title": "Dia dos Zumbis",
+          "overview": "Em um mundo dominado por zumbis, um grupo de cientistas e militares tenta sobreviver em um bunker subterrâneo.",
+          "company": "Universal Pictures",
+          "release_year": 1985,
+          "featured": false,
+          "cover": "/covers/movies/exterminio.jpg"
+        },
+        {
+          "title": "Meu Namorado é um Zumbi",
+          "overview": "Uma jovem se apaixona por um zumbi e tenta encontrar uma cura para sua condição.",
+          "company": "Lionsgate Films",
+          "release_year": 2013,
+          "featured": false,
+          "cover": "/covers/movies/warm-bodies.jpg"
+        }
+      ]
     }
   }
   

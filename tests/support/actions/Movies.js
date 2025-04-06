@@ -19,7 +19,7 @@ export class Movies {
         await this.page.locator('#title').fill(movie.title);
         await this.page.getByLabel('Sinopse').fill(movie.overview);
 
-        await this.page.locator('#select_company_id .react-select__indicator').click();
+        await this.page.locator('#select_company_id .react-select__indicator').first().click();
         //pegando html da página para identificar o elemento que é montado após o click do react-select
         // const html = await this.page.content();
         // console.log(html);
@@ -40,6 +40,21 @@ export class Movies {
 
     async alertHaveText(target) { 
         await expect(this.page.locator('.alert')).toHaveText(target)
+    }
+
+    async deleteMovie(title) {
+        await this.page.getByRole('row', {name: title}).getByRole('button').click(); //clica no botão remover filme
+        await this.page.click('.confirm-removal') //clica no botão de confirmar remoção
+    }
+
+    async searchMovie(title) {
+        await this.page.getByPlaceholder('Busque pelo nome').fill(title);
+        await this.page.click('.actions button')
+    }
+
+    async tableHaveContent(content) {
+        const rows = this.page.getByRole('row');
+        await expect(rows).toContainText(content);
     }
 
 

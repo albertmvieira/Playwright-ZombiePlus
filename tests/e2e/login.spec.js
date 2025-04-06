@@ -23,8 +23,8 @@ test('deve logar como administrador', async ({ page }) => {
 test('não deve logar com senha incorreta', async ({ page }) => {
     await login.visit(); //chama o método visit da classe login
     await login.submitLoginForm('admin@zombieplus.com', 'abc123'); //chama o método submitLoginForm da classe login
-    const message = 'Oops!Ocorreu um erro ao tentar efetuar o login. Por favor, verifique suas credenciais e tente novamente.'
-    await components.toastContainText(message); //chama o método toastContainText da classe login
+    const message = 'Ocorreu um erro ao tentar efetuar o login. Por favor, verifique suas credenciais e tente novamente.'
+    await components.popUpHaveText(message); //chama o método toastContainText da classe login
 });
 
 test('não deve logar quando o email é inválido ', async ({ page }) => {
