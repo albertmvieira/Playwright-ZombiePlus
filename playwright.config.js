@@ -16,16 +16,18 @@ require('dotenv').config({ path: path.resolve(__dirname, '.env') });
 module.exports = defineConfig({
   testDir: './tests',
   /* Run tests in files in parallel */
-  fullyParallel: true,
+  fullyParallel: false,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
-  retries: process.env.CI ? 2 : 0,
+  retries: process.env.CI ? 2 : 1,
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 3 : undefined,
+  workers: process.env.CI ? 2 : 3,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
-
+  reporter: [
+    ['html'],
+    ['json', {  outputFile: 'test-results.json' }]
+  ],
   //Timeout session
   timeout: 30 * 1000,
   expect: {
@@ -39,6 +41,10 @@ module.exports = defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    screenshot: 'on',
+    video: 'on',
+    baseURL: process.env.BASE_URL,
+    viewport: { width: 1440, height: 900 },
   },
 
   /* Configure projects for major browsers */

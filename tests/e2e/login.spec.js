@@ -1,8 +1,6 @@
 // Login não foi alterado para usar o novo contexto test customizado para mostrar o uso tanto com o contexto padrão do Playwright quanto com o contexto customizado:
 
 const { test, expect } = require('@playwright/test'); //importa a função test do Playwright
-
-
 const { Login } = require('../support/actions/Login'); //importa a classe login do arquivo login.js
 const { Components } = require('../support/actions/Components'); //importa a classe Components do arquivo Components.js
 

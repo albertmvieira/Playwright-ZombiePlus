@@ -2,12 +2,13 @@ const { expect } = require('@playwright/test'); //importa a biblioteca de testes
 
 export class Api {
     constructor(request) {
+        this.baseApi = process.env.BASE_API; //pega a variável de ambiente BASE_API
         this.request = request; //instancia a classe Api passando o request como parâmetro
         this.token = undefined; //cria uma variável token que será utilizada para armazenar o token de autenticação
     }
 
     async setToken(email, password) {
-        const response = await this.request.post('http://localhost:3333/sessions', {
+        const response = await this.request.post(this.baseApi + '/sessions', {
             data: {
                 email: email,
                 password: password
@@ -20,7 +21,7 @@ export class Api {
     }
 
     async getCompanyIdByName(companyName) {
-        const response = await this.request.get('http://localhost:3333/companies', {
+        const response = await this.request.get(this.baseApi + '/companies', {
             headers: {
                 Authorization: `Bearer ${this.token}` //adiciona o token no header da requisição
             },
@@ -36,7 +37,7 @@ export class Api {
     async postMovie(movie) {
 
         const companyId = await this.getCompanyIdByName(movie.company); //chama o método getCompanyIdByName passando o nome da empresa como parâmetro
-        const response = await this.request.post('http://localhost:3333/movies', {
+        const response = await this.request.post(this.baseApi + '/movies', {
             headers: {
                 Authorization: `Bearer ${this.token}`, //adiciona o token no header da requisição
                 ContentType: 'multipart/form-data',
@@ -56,7 +57,7 @@ export class Api {
     async postSerie(serie) {
 
         const companyId = await this.getCompanyIdByName(serie.company); //chama o método getCompanyIdByName passando o nome da empresa como parâmetro
-        const response = await this.request.post('http://localhost:3333/tvshows', {
+        const response = await this.request.post(this.baseApi + '/tvshows', {
             headers: {
                 Authorization: `Bearer ${this.token}`, //adiciona o token no header da requisição
                 ContentType: 'multipart/form-data',

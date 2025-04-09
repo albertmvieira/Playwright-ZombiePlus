@@ -15,7 +15,7 @@ test('deve poder cadastrar um novo filme', async ({ page }) => {
     //comentado para não deletar o filme do banco de dados pois já está sendo deletado no beforeAll
     //await executeSql(`delete from movies where title = '${movie.title}';`); //chama a função executeSql passando o script SQL para deletar o filme com o título do objeto movie
 
-    await page.login.loginAsAdmin('admin@zombieplus.com', 'pwd123', 'Admin'); //chama o método loginAsAdmin da classe login
+    await page.login.loginAsAdmin(process.env.USER_ADMIN, process.env.USER_ADMIN_PASSWORD, 'Admin'); //chama o método loginAsAdmin da classe login
     await page.movies.createMovie(movie); //chama o método createMovie da classe movies
     await page.components.popUpHaveText(`O filme '${movie.title}' foi adicionado ao catálogo.`); //chama o método haveText da classe Components
 
@@ -43,7 +43,7 @@ test('não deve cadastrar filme com titulo duplicado', async ({ page, request })
 })
 
 test('não deve cadastrar um filme quando os campos obrigatórios não são preenchidos', async ({ page }) => {
-    await page.login.loginAsAdmin('admin@zombieplus.com', 'pwd123', 'Admin'); //chama o método loginAsAdmin da classe login
+    await page.login.loginAsAdmin(process.env.USER_ADMIN, process.env.USER_ADMIN_PASSWORD, 'Admin'); //chama o método loginAsAdmin da classe login
 
     await page.movies.goForm(); //chama o método goForm da classe movies
     await page.movies.submit(); //chama o método submit da classe movies
