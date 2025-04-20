@@ -35,7 +35,7 @@
       {
         "outputDir": "C:/Desenvolvimento/Playwright/zombieplus/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {},
         "id": "chromium",
         "name": "chromium",
@@ -49,7 +49,7 @@
       {
         "outputDir": "C:/Desenvolvimento/Playwright/zombieplus/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {},
         "id": "firefox",
         "name": "firefox",
@@ -63,7 +63,7 @@
       {
         "outputDir": "C:/Desenvolvimento/Playwright/zombieplus/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {},
         "id": "webkit",
         "name": "webkit",
@@ -101,9 +101,9 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 6,
                   "status": "passed",
-                  "duration": 5479,
+                  "duration": 13931,
                   "errors": [],
                   "stdout": [
                     {
@@ -115,7 +115,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-09T00:14:08.907Z",
+                  "startTime": "2025-04-20T12:23:09.227Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -126,6 +126,11 @@
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-leads-deve-cadastrar-um-lead-na-fila-de-espera-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-leads-deve-cadastrar-um-lead-na-fila-de-espera-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -151,18 +156,18 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 6,
                   "status": "passed",
-                  "duration": 3512,
+                  "duration": 9899,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImViY2IwOTVlLTdhYTEtNDhjZS1iZjBkLTMyYTE1MDVjZmFhYyIsImlhdCI6MTc0NDE1NzY1NiwiZXhwIjoxNzQ1MDIxNjU2fQ.ED0Y63YtpvDyHurFWyuVSuzm7RZM5hPJ0wpGHVnj9sM\n"
+                      "text": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImViY2IwOTVlLTdhYTEtNDhjZS1iZjBkLTMyYTE1MDVjZmFhYyIsImlhdCI6MTc0NTE1MTgwNywiZXhwIjoxNzQ2MDE1ODA3fQ.4LnItgSV5EoliuMwyvKNLVlY6ra2iLOJlB484UOVwn0\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-09T00:14:15.970Z",
+                  "startTime": "2025-04-20T12:23:26.361Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -173,6 +178,11 @@
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-leads-não-deve-cadastrar-quando-o-email-já-existe-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-leads-não-deve-cadastrar-quando-o-email-já-existe-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -198,14 +208,14 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 6,
                   "status": "passed",
-                  "duration": 3230,
+                  "duration": 6078,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-09T00:14:19.582Z",
+                  "startTime": "2025-04-20T12:23:40.767Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -216,6 +226,11 @@
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-leads-não-deve-cadastrar-com-email-incorreto-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-leads-não-deve-cadastrar-com-email-incorreto-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -241,14 +256,14 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 6,
                   "status": "passed",
-                  "duration": 2829,
+                  "duration": 5018,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-09T00:14:22.857Z",
+                  "startTime": "2025-04-20T12:23:50.238Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -259,6 +274,11 @@
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-leads-não-deve-cadastrar-quando-o-nome-não-é-preenchido-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-leads-não-deve-cadastrar-quando-o-nome-não-é-preenchido-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -284,14 +304,14 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 6,
                   "status": "passed",
-                  "duration": 3137,
+                  "duration": 6079,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-09T00:14:25.720Z",
+                  "startTime": "2025-04-20T12:23:56.537Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -302,6 +322,11 @@
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-leads-não-deve-cadastrar-quando-o-email-não-é-preenchido-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-leads-não-deve-cadastrar-quando-o-email-não-é-preenchido-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -327,14 +352,14 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 6,
                   "status": "passed",
-                  "duration": 2803,
+                  "duration": 6436,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-09T00:14:28.876Z",
+                  "startTime": "2025-04-20T12:24:04.710Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -345,6 +370,11 @@
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-leads-não-deve-cadastr-9db9f-o-nenhum-campo-é-preenchido-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-leads-não-deve-cadastr-9db9f-o-nenhum-campo-é-preenchido-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -378,14 +408,14 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 7,
                   "status": "passed",
-                  "duration": 4363,
+                  "duration": 14026,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-09T00:14:08.209Z",
+                  "startTime": "2025-04-20T12:23:08.512Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -396,6 +426,11 @@
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-login-deve-logar-como-administrador-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-login-deve-logar-como-administrador-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -421,14 +456,14 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 7,
                   "status": "passed",
-                  "duration": 3335,
+                  "duration": 3652,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-09T00:14:13.700Z",
+                  "startTime": "2025-04-20T12:23:23.944Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -439,6 +474,11 @@
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-login-não-deve-logar-com-senha-incorreta-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-login-não-deve-logar-com-senha-incorreta-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -464,14 +504,14 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 7,
                   "status": "passed",
-                  "duration": 2416,
+                  "duration": 4385,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-09T00:14:17.061Z",
+                  "startTime": "2025-04-20T12:23:29.282Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -482,6 +522,11 @@
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-login-não-deve-logar-quando-o-email-é-inválido--chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-login-não-deve-logar-quando-o-email-é-inválido--chromium\\trace.zip"
                     }
                   ]
                 }
@@ -507,14 +552,14 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 7,
                   "status": "passed",
-                  "duration": 2668,
+                  "duration": 3231,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-09T00:14:19.506Z",
+                  "startTime": "2025-04-20T12:23:34.179Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -525,6 +570,11 @@
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-login-não-deve-logar-quando-o-email-não-é-preenchido-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-login-não-deve-logar-quando-o-email-não-é-preenchido-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -550,14 +600,14 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 7,
                   "status": "passed",
-                  "duration": 2660,
+                  "duration": 3432,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-09T00:14:22.216Z",
+                  "startTime": "2025-04-20T12:23:38.271Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -568,6 +618,11 @@
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-login-não-deve-logar-quando-a-senha-não-é-preenchida-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-login-não-deve-logar-quando-a-senha-não-é-preenchida-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -593,14 +648,14 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 7,
                   "status": "passed",
-                  "duration": 2531,
+                  "duration": 3268,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-09T00:14:24.915Z",
+                  "startTime": "2025-04-20T12:23:42.535Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -611,6 +666,11 @@
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-login-não-deve-logar-quando-nenhum-campo-é-preenchida-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-login-não-deve-logar-quando-nenhum-campo-é-preenchida-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -644,9 +704,9 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 8,
                   "status": "passed",
-                  "duration": 6504,
+                  "duration": 14638,
                   "errors": [],
                   "stdout": [
                     {
@@ -661,7 +721,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-09T00:14:08.852Z",
+                  "startTime": "2025-04-20T12:23:09.393Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -672,6 +732,11 @@
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-movies-deve-poder-cadastrar-um-novo-filme-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-movies-deve-poder-cadastrar-um-novo-filme-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -697,18 +762,21 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 8,
                   "status": "passed",
-                  "duration": 3228,
+                  "duration": 6272,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImViY2IwOTVlLTdhYTEtNDhjZS1iZjBkLTMyYTE1MDVjZmFhYyIsImlhdCI6MTc0NDE1NzY1NywiZXhwIjoxNzQ1MDIxNjU3fQ.5A7rL63SiOx-m7PYdr8fKrcYdkqKR2mIxCycAwGKiYA\n"
+                      "text": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImViY2IwOTVlLTdhYTEtNDhjZS1iZjBkLTMyYTE1MDVjZmFhYyIsImlhdCI6MTc0NTE1MTgwNywiZXhwIjoxNzQ2MDE1ODA3fQ.4LnItgSV5EoliuMwyvKNLVlY6ra2iLOJlB484UOVwn0\n"
+                    },
+                    {
+                      "text": "C:\\Desenvolvimento\\Playwright\\zombieplus\\tests\\support\\fixtures\\covers\\movies\\zumbilandia.jpg\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-09T00:14:16.912Z",
+                  "startTime": "2025-04-20T12:23:27.179Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -719,6 +787,11 @@
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-movies-deve-poder-remover-um-filme-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-movies-deve-poder-remover-um-filme-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -744,18 +817,21 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 8,
                   "status": "passed",
-                  "duration": 5326,
+                  "duration": 6904,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImViY2IwOTVlLTdhYTEtNDhjZS1iZjBkLTMyYTE1MDVjZmFhYyIsImlhdCI6MTc0NDE1NzY2MCwiZXhwIjoxNzQ1MDIxNjYwfQ.CRzFCohueUk377ZeHxoq0N8zFHy0eMGnuVZjfHNCG3o\n"
+                      "text": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImViY2IwOTVlLTdhYTEtNDhjZS1iZjBkLTMyYTE1MDVjZmFhYyIsImlhdCI6MTc0NTE1MTgxNSwiZXhwIjoxNzQ2MDE1ODE1fQ.vjJynra0ubs9rBIaFkmIHXh8OYNCGcsW7uT_Wf9pY7o\n"
+                    },
+                    {
+                      "text": "C:\\Desenvolvimento\\Playwright\\zombieplus\\tests\\support\\fixtures\\covers\\movies\\opz.jpg\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-09T00:14:20.180Z",
+                  "startTime": "2025-04-20T12:23:34.278Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -766,6 +842,11 @@
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-movies-não-deve-cadastrar-filme-com-titulo-duplicado-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-movies-não-deve-cadastrar-filme-com-titulo-duplicado-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -791,14 +872,14 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 8,
                   "status": "passed",
-                  "duration": 2955,
+                  "duration": 4082,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-09T00:14:25.540Z",
+                  "startTime": "2025-04-20T12:23:42.840Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -809,6 +890,11 @@
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-movies-não-deve-cadast-d36d8-atórios-não-são-preenchidos-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-movies-não-deve-cadast-d36d8-atórios-não-são-preenchidos-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -834,18 +920,27 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 8,
                   "status": "passed",
-                  "duration": 3577,
+                  "duration": 6625,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImViY2IwOTVlLTdhYTEtNDhjZS1iZjBkLTMyYTE1MDVjZmFhYyIsImlhdCI6MTc0NDE1NzY2OCwiZXhwIjoxNzQ1MDIxNjY4fQ._nWN8GEKcAdXVfI4hOHoKWkiWFAeJ2Z1u1LYz2ag7J8\n"
+                      "text": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImViY2IwOTVlLTdhYTEtNDhjZS1iZjBkLTMyYTE1MDVjZmFhYyIsImlhdCI6MTc0NTE1MTgyNywiZXhwIjoxNzQ2MDE1ODI3fQ.8qK6W5xCHn2pgqtaJGlNOHb__Xun5sY1OvntQtMHwys\n"
+                    },
+                    {
+                      "text": "C:\\Desenvolvimento\\Playwright\\zombieplus\\tests\\support\\fixtures\\covers\\movies\\wwz.png\n"
+                    },
+                    {
+                      "text": "C:\\Desenvolvimento\\Playwright\\zombieplus\\tests\\support\\fixtures\\covers\\movies\\exterminio.jpg\n"
+                    },
+                    {
+                      "text": "C:\\Desenvolvimento\\Playwright\\zombieplus\\tests\\support\\fixtures\\covers\\movies\\warm-bodies.jpg\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-09T00:14:28.527Z",
+                  "startTime": "2025-04-20T12:23:47.457Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -856,6 +951,11 @@
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-movies-deve-realizar-busca-pelo-termo-zumbi-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-movies-deve-realizar-busca-pelo-termo-zumbi-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -889,9 +989,9 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 7,
                   "status": "passed",
-                  "duration": 5288,
+                  "duration": 9048,
                   "errors": [],
                   "stdout": [
                     {
@@ -906,7 +1006,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-09T00:14:28.846Z",
+                  "startTime": "2025-04-20T12:23:47.297Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -917,6 +1017,11 @@
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-series-deve-poder-cadastrar-uma-nova-serie-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-series-deve-poder-cadastrar-uma-nova-serie-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -942,18 +1047,18 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 7,
                   "status": "passed",
-                  "duration": 2237,
+                  "duration": 4962,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImViY2IwOTVlLTdhYTEtNDhjZS1iZjBkLTMyYTE1MDVjZmFhYyIsImlhdCI6MTc0NDE1NzY3NCwiZXhwIjoxNzQ1MDIxNjc0fQ.rrCe8XHafPAa1V61KqWEMXVdFpTrJiRJSVNOvUniGEc\n"
+                      "text": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImViY2IwOTVlLTdhYTEtNDhjZS1iZjBkLTMyYTE1MDVjZmFhYyIsImlhdCI6MTc0NTE1MTgzOSwiZXhwIjoxNzQ2MDE1ODM5fQ.F_qSEkxZd2B17QjWe3oL1ECc7Nh44x3nZ7QHZrsNp40\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-09T00:14:34.436Z",
+                  "startTime": "2025-04-20T12:23:58.992Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -964,6 +1069,11 @@
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-series-deve-poder-remover-uma-serie-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-series-deve-poder-remover-uma-serie-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -989,18 +1099,18 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 7,
                   "status": "passed",
-                  "duration": 2700,
+                  "duration": 6568,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImViY2IwOTVlLTdhYTEtNDhjZS1iZjBkLTMyYTE1MDVjZmFhYyIsImlhdCI6MTc0NDE1NzY3NiwiZXhwIjoxNzQ1MDIxNjc2fQ.7gOQnrYz8pKDpX_L__taKAkFxEyP0PUYqGBcMHgGfQE\n"
+                      "text": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImViY2IwOTVlLTdhYTEtNDhjZS1iZjBkLTMyYTE1MDVjZmFhYyIsImlhdCI6MTc0NTE1MTg0NSwiZXhwIjoxNzQ2MDE1ODQ1fQ.DM5KSPy8BJJF7ia0txCTnIPzT2n_FI7ylWdmSrrI8uE\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-09T00:14:36.685Z",
+                  "startTime": "2025-04-20T12:24:04.968Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -1011,6 +1121,11 @@
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-series-não-deve-cadastrar-serie-com-titulo-duplicado-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-series-não-deve-cadastrar-serie-com-titulo-duplicado-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -1036,14 +1151,14 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 7,
                   "status": "passed",
-                  "duration": 2035,
+                  "duration": 3716,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-09T00:14:39.410Z",
+                  "startTime": "2025-04-20T12:24:12.629Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -1054,6 +1169,11 @@
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-series-não-deve-cadast-98f00-atórios-não-são-preenchidos-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-series-não-deve-cadast-98f00-atórios-não-são-preenchidos-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -1079,18 +1199,18 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 7,
                   "status": "passed",
-                  "duration": 2013,
+                  "duration": 3528,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImViY2IwOTVlLTdhYTEtNDhjZS1iZjBkLTMyYTE1MDVjZmFhYyIsImlhdCI6MTc0NDE1NzY4MSwiZXhwIjoxNzQ1MDIxNjgxfQ.sIRx0B1ycuu_N4JKORu5tbCDFsKMs8LS7fIULo4w_0E\n"
+                      "text": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImViY2IwOTVlLTdhYTEtNDhjZS1iZjBkLTMyYTE1MDVjZmFhYyIsImlhdCI6MTc0NTE1MTg1NywiZXhwIjoxNzQ2MDE1ODU3fQ.lyd0cL5lflJISK3UavbYeMmPfmH7B2kGZmZybEjx3tQ\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-09T00:14:41.456Z",
+                  "startTime": "2025-04-20T12:24:17.107Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -1101,6 +1221,11 @@
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-series-deve-realizar-busca-pelo-termo-zumbi-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Desenvolvimento\\Playwright\\zombieplus\\test-results\\e2e-series-deve-realizar-busca-pelo-termo-zumbi-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -1118,8 +1243,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-04-09T00:14:06.670Z",
-    "duration": 37220.879,
+    "startTime": "2025-04-20T12:23:05.641Z",
+    "duration": 76213.97999999998,
     "expected": 22,
     "skipped": 0,
     "unexpected": 0,

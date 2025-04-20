@@ -49,17 +49,23 @@ Este conjunto de testes cobre o fluxo de cadastro de filmes no sistema. Os cená
 - **Cadastro de um novo filme**: Verifica se o sistema permite cadastrar um filme com título, sinopse, produtora e ano de lançamento válidos.
 - **Validação de mensagens de sucesso**: Garante que o sistema exibe uma mensagem de sucesso após o cadastro.
 
+### series.spec
+Este conjunto de testes cobre o fluxo de cadastro de séries no sistema. Os cenários incluem:
+- **Cadastro de uma nova série**: Verifica se o sistema permite cadastrar uma série com título, sinopse, produtora, ano de lançamento e número de temporadas válidos.
+- **Validação de mensagens de sucesso**: Garante que o sistema exibe uma mensagem de sucesso após o cadastro.
+- **Campos obrigatórios**: Testa se o sistema impede o cadastro quando algum campo obrigatório não é preenchido.
+
 Os testes utilizam dados fictícios fornecidos pelo Faker e um banco de dados PostgreSQL para validação de cenários.
 
 ## 📂 Estrutura do Projeto
 
-- **tests/e2e**: Contém os testes de ponta a ponta, como `Leads1.spec.js`, `login.spec.js` e `movies.spec.js`.
-- **tests/pages**: Contém os Page Objects que encapsulam interações com as páginas, como `LandingPage.js`, `LoginPage.js` e `MoviesPage.js`.
+- **tests/e2e**: Contém os testes de ponta a ponta, como `Leads1.spec.js`, `login.spec.js`, `movies.spec.js` e `series.spec.js`.
+- **tests/actions**: Contém os arquivos que encapsulam as interações com as páginas, como `LandingActions.js`, `LoginActions.js` e `MoviesActions.js`.
 - **tests/support**: Contém utilitários e configurações, como o banco de dados e o contexto de teste customizado.
-- **tests/support/fixtures**: Contém dados de teste, como o arquivo `movies.json`.
+  - **database.js**: Gerencia as conexões com o banco de dados PostgreSQL e executa operações como limpeza e inserção de dados para os testes.
+  - **index.js**: Contém métodos auxiliares para realizar requisições HTTP, como autenticação e envio de dados via API.
+  - **.env**: Arquivo que armazena variáveis de ambiente globais, como a URL base da API (`BASE_API`) e credenciais de acesso.
 
-## 🚀 Próximos Passos
+## 🚀 Let's Rock
 
-- Adicionar mais cenários de teste para cobrir funcionalidades adicionais.
-- Melhorar a cobertura de testes para casos de borda.
-- Automatizar a execução dos testes em pipelines CI/CD.
+- Projeto de estudo finalizado com melhorias na cobertura de teste.

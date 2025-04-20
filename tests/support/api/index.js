@@ -1,3 +1,7 @@
+import path from 'path';
+import fs from 'fs'; //importa o módulo fs para manipulação de arquivos
+import mime from 'mime-types'; //importa o módulo mime-types para determinar o tipo MIME
+
 const { expect } = require('@playwright/test'); //importa a biblioteca de testes do Playwright
 
 export class Api {
@@ -35,9 +39,12 @@ export class Api {
     }
 
     async postMovie(movie) {
+        const dir = path.resolve('./tests/support/fixtures/' + movie.cover); //pega o caminho do diretório onde estão os arquivos de teste
+        console.log(dir)
+        const image = fs.readFileSync(dir); //pega o buffer da imagem
 
         const companyId = await this.getCompanyIdByName(movie.company); //chama o método getCompanyIdByName passando o nome da empresa como parâmetro
-        const response = await this.request.post(this.baseApi + '/movies', {
+        await this.request.post(this.baseApi + '/movies', {
             headers: {
                 Authorization: `Bearer ${this.token}`, //adiciona o token no header da requisição
                 ContentType: 'multipart/form-data',
@@ -49,7 +56,11 @@ export class Api {
                 company_id: companyId,
                 release_year: movie.release_year,
                 featured: movie.featured,
-                cover: movie.cover,
+                cover: {
+                    name: path.basename(movie.cover), //nome do arquivo
+                    type: mime.lookup(movie.cover) || 'application/octet-stream', //determina o tipo MIME dinamicamente                 
+                    buffer: image,
+                },
             }
         });
     }
@@ -70,7 +81,7 @@ export class Api {
                 release_year: serie.release_year,
                 featured: serie.featured,
                 seasons: serie.season,
-                cover: serie.cover,
+                cover: './tests/support/fixtures' + serie.cover,
             }
         });
     }
